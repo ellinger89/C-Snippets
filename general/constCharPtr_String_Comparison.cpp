@@ -23,6 +23,7 @@ if (argc > 1) {
 	// the sourcecode-string must also be dereferenced first, since something like
 	// "mystring" in the sourcecode is actually a const char pointer to the first
 	// character, in this case the memoryie-adress of this particular "m"
+	// (note: dereferencing "mystring" - like: *mystring - will only 'return' the value "m")
 	if (firstArg == *"y") {
 		std::cout << firstArg << " = y" << std::endl;
 	}
